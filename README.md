@@ -40,8 +40,45 @@ Backend:
 
 # 📦 Setup Instructions
 
-## 1️⃣ Clone Repository
+# Backend Setup
 
-```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+Navigate to the backend folder:
+
+cd server
+
+Install dependencies:
+
+npm install
+
+Create a .env file inside the server folder and add the following:
+
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+
+If you are using MongoDB Atlas, replace MONGO_URI with your cloud connection string.
+
+Start the backend server:
+
+npm run dev
+
+The backend will run on:
+http://localhost:5000
+
+#Frontend Setup
+
+Open a new terminal and navigate to the frontend folder:
+
+cd client
+
+Install dependencies:
+
+npm install
+
+Start the frontend:
+
+npm run dev
+
+The frontend will run on:
+http://localhost:5173
+
